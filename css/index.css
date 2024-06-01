@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-principal:"Raleway", sans-serif;
+    --fonte-secundaria: "unna";
+    --preto:black;
+    --branco: #fff;
+    --branco-transparente:#ffffffa1;
+    --cinza: #a5a5a5;
+    --cinza-escuro: #333232;
+    --roxo-escuro: #020024;
+    --azul: #0082FB;
+    --azul-claro: #00d4ff;
+    --azul-medio: #003153;
+    --azul-escuro: #090979;
+    
+}
+body{
+    background-image: url("/img/wallpaper-mar1.jpg");
+    background-repeat: no-repeat;
+
+}

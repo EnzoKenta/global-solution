@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-principal:"Raleway", sans-serif;
+    --fonte-secundaria: "unna";
+    --preto:black;
+    --branco: #fff;
+    --branco-transparente:#ffffffa1;
+    --cinza: #a5a5a5;
+    --cinza-escuro: #333232;
+    --roxo-escuro: #020024;
+    --azul: #0082FB;
+    --azul-claro: #00d4ff;
+    --azul-medio: #003153;
+    --azul-escuro: #090979;
+    
+}
+body{
+    background-image: url("/img/wallpaper-mar1.jpg");
+    background-repeat: no-repeat;
+
+}
+main{
+    background-color: var(--branco-transparente);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    margin-left: 33rem;
+    margin-right: 33rem;
+}
+h1{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 2.5rem;
+}
+#botao{
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: 6rem 6rem;
+}
+#email,#password{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 26rem;
+    border-radius: 3rem;
+    border: transparent;
+    text-align: center;
+}
+button{
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+    height: 3rem;
+    width: 15rem;
+    border-radius: 3rem;
+    border: transparent;
+    justify-self: center;
+    background: radial-gradient(circle, var(--roxo-escuro) 0%, var(--azul-escuro) 36%, var(--azul-claro) 100%);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+button:hover {
+    background-color: transparent;
+    background: var(--roxo-escuro) scroll 7.5svb;
+    transition: all 0.8s ease-in-out;
+}
+#checkbox{
+    margin-left: 20rem;
+}
+footer{
+    margin-left: 7rem;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+}

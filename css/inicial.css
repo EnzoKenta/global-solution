@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-principal:"Raleway", sans-serif;
+    --fonte-secundaria: "unna";
+    --preto:black;
+    --branco: #fff;
+    --branco-transparente:#ffffffa1;
+    --cinza: #a5a5a5;
+    --cinza-escuro: #333232;
+    --roxo-escuro: #020024;
+    --azul: #0082FB;
+    --azul-claro: #00d4ff;
+    --azul-medio: #003153;
+    --azul-escuro: #090979;
+       
+}
+body{
+    background-image: url("/img/wallpaper-mar1.jpg");
+    background-repeat: no-repeat;
+
+}
+h1{
+   font-size: 3rem;
+   font-family: var(--fonte-principal);
+   text-align: center;
+}
+h2{
+    font-size: 2rem;
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin-top: 1rem;
+}
+#back{
+    background-color: var(--branco-transparente);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    margin-top: 3rem;
+    border-radius: 3rem;
+    height: 40rem;
+    transition: all 1.5s ease-in-out;
+    
+    &:hover {
+        background-color: transparent;
+    }
+
+    
+}
+ul{
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    justify-content: center;
+    margin-top: 6rem;
+    margin-left: 4.5rem;
+    background-color: transparent;
+    box-shadow:var(--cinza-escuro);
+    border-radius: 3rem;
+    height: 20rem;
+    text-align: center;  
+}
+#box1{
+    justify-content: center;
+    background-color: var(--cinza);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--cinza-escuro);
+    }
+
+}
+#box2{
+    justify-content: center;
+    background-color: var(--cinza);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--cinza-escuro);
+    }
+}
+#box3{
+    justify-content: center;
+    background-color: var(--cinza);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--cinza-escuro);
+    }
+}
