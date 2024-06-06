@@ -15,10 +15,70 @@
     --azul-claro: #00d4ff;
     --azul-medio: #003153;
     --azul-escuro: #090979;
+    --quase-cinza: #c6d4e1;
     
 }
 body{
     background-image: url("/img/wallpaper-mar1.jpg");
     background-repeat: no-repeat;
 
+}
+
+#main{
+    background-color: var(--quase-cinza);
+    border-radius: 3rem;
+    box-sizing: border-box;
+    margin-left: 33rem;
+    margin-right: 33rem;
+    transition: all 1.5s ease-in-out;
+    
+    &:hover {
+        background-color: var(--branco-transparente);
+    }
+}
+h1{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    margin-top: 4rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+}
+#register{
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    display: grid;
+    grid-template-rows: 3rem 3rem 3rem;
+    gap: 3.5rem;
+}
+#email,#name,#password{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    height: 4rem;
+    width: 26rem;
+    border-radius: 3rem;
+    border: transparent;
+    text-align: center;
+    margin-top: 2rem;
+}
+#btn-submit{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria);
+    color: var(--branco);
+    height: 3rem;
+    width: 15rem;
+    border-radius: 3rem;
+    border: transparent;
+    justify-self: center;
+    background: radial-gradient(circle, var(--roxo-escuro) 0%, var(--azul-escuro) 36%, var(--azul-claro) 100%);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+
+}
+#btn-submit:hover {
+    background-color: transparent;
+    background: var(--roxo-escuro) scroll 7.5svb;
+    transition: all 0.8s ease-in-out;
 }
