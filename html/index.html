@@ -10,20 +10,28 @@
     <title>Index</title>
 </head>
 <body>
-    <main>
-        <form action="" method="get" class="forms">
-            <div class="forms">
-              <label for="name">Digite seu nome: </label>
-              <input type="text" name="name" id="name" required />
-            </div>
-            <div class="forms">
-              <label for="email">Digite sua senha: </label>
-              <input type="email" name="email" id="email" required />
-            </div>
-            <div class="forms">
-              <input type="submit" value="Submit" />
-            </div>
-          </form>
-    </main>
+  <div id="main">
+    <h1>Cadastre-se</h1>
+    <a href="/html/login.html"><img src="/img/icon/seta-icon.png" alt="Icone de seta preta para voltar" id="seta"></a>
+    <form id="register" action="/html/inicial.html" onsubmit="return ValidateForm()" method="post">
+      <div class="box-email">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+      </div>
+      <div class="box-nome">
+          <label for="name">Nome</label>
+          <input type="text" name="name" id="name" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16" data-only-letters>
+      </div>
+      <div class="box-senha">
+        <label for="password">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+      </div>
+      <div class="submit">
+        <input id="btn-submit" type="submit" value="Registrar">
+      </div>
+    </form>
+  </div>
+  <p class="error-validation template"></p>
+  <script src="/javascript/cadastro.js"></script>
 </body>
 </html>
