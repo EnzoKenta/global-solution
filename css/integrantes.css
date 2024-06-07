@@ -1,0 +1,104 @@
+:root {
+    --fonte-principal: "Raleway", sans-serif;
+    --fonte-secundaria: "unna";
+    --preto: black;
+    --branco: #fff;
+    --branco-transparente: #ffffff8f;
+    --cinza: #a5a5a5;
+    --cinza-escuro: #333232;
+    --roxo-escuro: #020024;
+    --azul-transparente: #0082fb6c;
+    --azul: #0082FB;
+    --azul-claro: #00d4ff;
+    --azul-medio: #003153;
+    --azul-escuro: #090979;
+    --quase-cinza: #c6d4e1;
+    --preto-transparente: rgba(0, 0, 0, 0.2);
+    --transition-time: 0.3s;
+    --padding-standard: 2rem;
+    --padding-small: 1rem;
+    --border-radius: 0.5rem;
+    --header-height: 3rem;
+    --footer-height: 3rem;
+}
+
+body {
+    font-family: var(--fonte-principal);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--quase-cinza);
+    color: var(--preto);
+}
+
+header {
+    background-color: var(--azul-medio);
+    color: var(--branco);
+    text-align: center;
+    padding: var(--padding-standard);
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: var(--padding-standard);
+    flex-wrap: wrap;
+}
+
+.integrante {
+    background-color: var(--branco);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px var(--preto-transparente);
+    margin: var(--padding-small);
+    padding: var(--padding-small);
+    text-align: center;
+    transition: transform var(--transition-time);
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and flex-basis for responsiveness */
+}
+
+.integrante:hover {
+    transform: scale(1.05);
+}
+
+.integrante img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+}
+
+.integrante h2 {
+    font-family: var(--fonte-secundaria);
+    color: var(--azul-escuro);
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    main {
+        padding: var(--padding-small);
+    }
+    .integrante {
+        margin: var(--padding-small) 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .integrante {
+        flex: 1 1 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    .integrante {
+        flex: 1 1 100%;
+        margin: var(--padding-small) 0;
+    }
+}
+
+@media (max-width: 576px) {
+    .integrante {
+        padding: var(--padding-small);
+    }
+    header {
+        padding: var(--padding-small);
+    }
+}
