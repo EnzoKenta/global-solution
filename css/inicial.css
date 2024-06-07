@@ -60,9 +60,9 @@ ul{
     height: 20rem;
     text-align: center;  
 }
-#box1{
+#box1,#drone-maritimo{
     justify-content: center;
-    background-color: var(--cinza);
+    background-color: var(--branco);
     height: 20rem;
     width: 20rem;
     border-radius: 2rem;
@@ -71,13 +71,13 @@ ul{
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        background-color: var(--cinza-escuro);
+        background-color: var(--azul);
     }
 
 }
-#box2{
+#box2,#drone{
     justify-content: center;
-    background-color: var(--cinza);
+    background-color: var(--branco);
     height: 20rem;
     width: 20rem;
     border-radius: 2rem;
@@ -86,12 +86,12 @@ ul{
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        background-color: var(--cinza-escuro);
+        background-color: var(--azul);
     }
 }
-#box3{
+#box3,#planejamento{
     justify-content: center;
-    background-color: var(--cinza);
+    background-color: var(--branco);
     height: 20rem;
     width: 20rem;
     border-radius: 2rem;
@@ -100,6 +100,6 @@ ul{
     transition: all 0.5s ease-in-out;
 
     &:hover {
-        background-color: var(--cinza-escuro);
+        background-color: var(--azul);
     }
 }

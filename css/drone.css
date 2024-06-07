@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fonte-principal:"Raleway", sans-serif;
+    --fonte-secundaria: "unna";
+    --preto:black;
+    --branco: #fff;
+    --branco-transparente:#ffffffa1;
+    --cinza: #a5a5a5;
+    --cinza-escuro: #333232;
+    --roxo-escuro: #020024;
+    --azul: #0082FB;
+    --azul-claro: #00d4ff;
+    --azul-medio: #003153;
+    --azul-escuro: #090979;
+    --quase-cinza: #c6d4e1;
+    
+}
+body{
+    background-image: url("/img/wallpaper-mar1.jpg");
+    background-repeat: no-repeat;
+
+}
+#contain{
+        background-color: var(--branco);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-top: 1rem;
+        border-radius: 3rem;
+        height: 52rem;
+}
+#seta{
+    height: 3rem;
+    width: 3rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
+#drone{
+    height: 20rem;
+    width: 30rem;
+    margin-left: 37rem;
+}
+h1{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+h2{
+    font-family: var(--fonte-principal);
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 2rem;
+}
+#texto{
+    font-size: 1rem;
+    justify-content: center;
+    background-color: var(--branco);
+    border-radius: 10rem;
+    padding: 1rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--azul);
+    }
+}
+
+p{
+    font-family: var(--fonte-secundaria);
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
