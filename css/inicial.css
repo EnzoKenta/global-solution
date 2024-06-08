@@ -43,11 +43,6 @@ h2{
     height: 40rem;
     transition: all 1.5s ease-in-out;
     
-    &:hover {
-        background-color: transparent;
-    }
-
-    
 }
 ul{
     display: grid;

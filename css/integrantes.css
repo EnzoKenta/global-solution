@@ -76,6 +76,10 @@ main {
 .integrante h2 {
     font-family: var(--fonte-secundaria);
     color: var(--azul-escuro);
+    
+}
+.integrante h2 a{
+    text-decoration: none;
 }
 
 /* Responsividade */
