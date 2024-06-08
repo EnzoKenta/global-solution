@@ -51,7 +51,7 @@ h2{
 }
 ul{
     display: grid;
-    grid-template-columns: 25rem 25rem 25rem;
+    grid-template-columns: 25rem 25rem 25rem 25rem;
     justify-content: center;
     margin-top: 6rem;
     margin-left: 4.5rem;
@@ -60,6 +60,7 @@ ul{
     border-radius: 3rem;
     height: 20rem;
     text-align: center;  
+    list-style: none;
 }
 #box1,#drone-maritimo{
     justify-content: center;
@@ -103,4 +104,23 @@ ul{
     &:hover {
         background-color: var(--azul);
     }
+}
+
+#box4,#integrantes{
+    justify-content: center;
+    background-color: var(--branco);
+    height: 20rem;
+    width: 20rem;
+    border-radius: 2rem;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+        background-color: var(--azul);
+    }
+
+}
+#logo{
+    max-width: 200px;
 }

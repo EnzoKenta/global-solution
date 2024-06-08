@@ -21,6 +21,12 @@
     --header-height: 3rem;
     --footer-height: 3rem;
 }
+#seta{
+    height: 3rem;
+    width: 3rem;
+    padding-left: 2rem;
+    margin-top: 2rem;
+}
 
 body {
     font-family: var(--fonte-principal);
@@ -62,7 +68,8 @@ main {
 }
 
 .integrante img {
-    max-width: 100%;
+    max-width: 300px;
+    max-height: 300px;
     border-radius: var(--border-radius);
 }
 
@@ -101,4 +108,7 @@ main {
     header {
         padding: var(--padding-small);
     }
+}
+#logo{
+    max-width: 200px;
 }

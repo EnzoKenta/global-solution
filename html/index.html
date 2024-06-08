@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/index.css">
     <title>Index</title>
+    <script src="../javascript/cadastro.js" defer></script>
 </head>
 <body>
   <div id="main">
     <h1>Cadastre-se</h1>
     <a href="/html/login.html"><img src="/img/icon/seta-icon.png" alt="Icone de seta preta para voltar" id="seta"></a>
-    <form id="register" action="/html/inicial.html" onsubmit="return ValidateForm()" method="post">
+    <form id="cadastro">
       <div class="box-email">
         <label for="email">E-mail</label>
         <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
@@ -27,11 +28,9 @@
         <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
       </div>
       <div class="submit">
-        <input id="btn-submit" type="submit" value="Registrar">
+        <button id="btn-submit" type="submit">Entrar</button>
       </div>
     </form>
   </div>
-  <p class="error-validation template"></p>
-  <script src="/javascript/cadastro.js"></script>
 </body>
 </html>
