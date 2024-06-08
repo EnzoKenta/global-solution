@@ -74,3 +74,6 @@ p{
     padding: 2rem;
     text-align: center;
 }
+#logo{
+    max-width: 200px;
+}

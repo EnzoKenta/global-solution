@@ -126,3 +126,6 @@ main{
     height: 100%;
  
 }
+#logo{
+    max-width: 200px;
+}
