@@ -14,5 +14,5 @@ document.getElementById('cadastro').addEventListener('submit', function(event) {
     localStorage.setItem('usuario', JSON.stringify(usuario));
 
     alert('Usuário cadastrado com sucesso!');
-    window.location.href("login.html");
+    window.location.href = "login.html";
 });
